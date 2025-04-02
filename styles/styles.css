@@ -1,0 +1,237 @@
+/* styles/style.css */
+
+body {
+    background-color: #ee8963; /* Cor de fundo do body */
+    font-family: sans-serif; /* Fonte padrão */
+    color: #b8b8b9; /* Cor do texto principal */
+}
+
+.navbar-brand {
+    display: flex; /* Para alinhar os itens (logo e texto) */
+    align-items: center; /* Para alinhar verticalmente os itens */
+    font-size: 2.5em; /* Reduzi o tamanho da fonte para melhor encaixe */
+}
+
+.navbar-brand img {
+    margin-right: 10px; /* Adiciona um espaço entre a logo e o texto */
+    width: 100px; /* Garante que a largura da imagem seja 100px */
+    height: auto;
+}
+
+.navbar-nav .nav-link {
+    color: #b8b8b9 !important; /* Cor do texto principal para os links da navbar */
+    font-size: 1.1em; /* Aumentei um pouco o tamanho da fonte dos links */
+}
+
+.navbar-nav .nav-item.active .nav-link {
+    color: #fcfcfc !important; /* Cor de apoio para o link ativo da navbar */
+}
+
+/* Jumbotron (Hero Section) */
+.jumbotron {
+    background-color: #fcfcfc !important; /* Cor de apoio para o jumbotron */
+    color: #747576; /* Cor secundária para o texto do jumbotron */
+    padding: 2rem 1rem; /* Reduzi um pouco o padding para telas menores */
+}
+
+.jumbotron h1 {
+    color: #313233; /* Cor primária para o título do jumbotron */
+    font-family: sans-serif; /* Garante que o título também use sans-serif */
+    font-weight: bold; /* Garante que o título seja em negrito */
+    font-size: 2.5em; /* Reduzi o tamanho da fonte do título */
+}
+
+.jumbotron p.lead {
+    font-size: 1.2em; /* Reduzi o tamanho da fonte do texto principal */
+}
+
+.jumbotron hr {
+    border-top-color: #747576; /* Cor da linha divisória no jumbotron */
+    margin: 1rem 0; /* Reduzi um pouco a margem */
+}
+
+.jumbotron .btn-primary {
+    background-color: #313233; /* Cor primária para o botão do jumbotron */
+    border-color: #313233;
+    color: #fcfcfc; /* Cor de apoio para o texto do botão do jumbotron */
+    font-size: 1.1em; /* Aumentei um pouco o tamanho da fonte do botão */
+}
+
+.jumbotron .btn-primary:hover {
+    background-color: #1a1a1a; /* Cor mais escura para o hover do botão */
+    border-color: #1a1a1a;
+}
+
+/* Categorias Principais */
+#categorias-principais h2 {
+    color: #313233; /* Cor primária para o título das categorias */
+    font-size: 2em; /* Reduzi o tamanho da fonte do título */
+    margin-bottom: 1.5rem; /* Aumentei um pouco a margem inferior */
+}
+
+#categorias-principais .card {
+    border: none;
+}
+
+#categorias-principais .card-body {
+    background-color: #fcfcfc; /* Cor de apoio para o fundo dos cards de categoria */
+    padding: 1.5rem; /* Ajustei o padding interno do card */
+}
+
+#categorias-principais .card-title {
+    color: #313233; /* Cor primária para o título da categoria */
+    font-size: 1.5em; /* Reduzi o tamanho da fonte do título */
+    margin-bottom: 0.75rem; /* Ajustei a margem inferior */
+}
+
+#categorias-principais .card-text {
+    color: #747576; /* Cor secundária para o texto da categoria */
+    font-size: 1em; /* Ajustei o tamanho da fonte do texto */
+}
+
+#categorias-principais .btn-outline-primary {
+    color: #313233; /* Cor primária para o texto do botão de categoria */
+    border-color: #313233;
+    font-size: 1em; /* Ajustei o tamanho da fonte do botão */
+}
+
+#categorias-principais .btn-outline-primary:hover {
+    background-color: #313233;
+    color: #fcfcfc;
+}
+
+/* Contato */
+#contato {
+    background-color: #fcfcfc !important; /* Cor de apoio para o fundo da seção de contato */
+    color: #b8b8b9; /* Cor do texto principal na seção de contato */
+    padding: 3rem 1rem; /* Adicionei um pouco de padding */
+}
+
+#contato h2 {
+    color: #313233; /* Cor primária para o título do contato */
+    font-size: 2em; /* Reduzi o tamanho da fonte do título */
+    margin-bottom: 1.5rem; /* Aumentei um pouco a margem inferior */
+}
+
+#contato .btn-outline-secondary {
+    color: #747576; /* Cor secundária para o texto do botão de contato */
+    border-color: #747576;
+    font-size: 1em; /* Ajustei o tamanho da fonte do botão */
+    padding: 0.75rem 1.25rem; /* Ajustei o padding do botão */
+}
+
+#contato .btn-outline-secondary:hover {
+    background-color: #747576;
+    color: #fcfcfc;
+}
+
+/* Footer */
+footer {
+    background-color: #313233 !important; /* Cor primária para o footer */
+    color: #fcfcfc !important; /* Cor de apoio para o texto do footer */
+    padding: 1rem 0; /* Ajustei o padding do footer */
+    font-size: 0.9em; /* Reduzi um pouco o tamanho da fonte do footer */
+}
+
+/* Estilos para o menu mobile */
+.navbar-toggler-custom {
+    border: none;
+    background: transparent;
+    padding: 8px;
+    outline: none;
+}
+
+.navbar-toggler-icon-custom {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #fcfcfc;
+    margin: 5px auto;
+    transition: all 0.3s ease-in-out;
+}
+
+.navbar-collapse-mobile {
+    position: fixed;
+    top: 0;
+    left: -100%; /* Esconde o menu fora da tela inicialmente */
+    width: 80%;
+    height: 100%;
+    background-color: #313233;
+    transition: all 0.3s ease-in-out;
+    z-index: 1000; /* Garante que o menu fique acima do conteúdo */
+    padding-top: 60px; /* Espaço para o header fixo */
+}
+
+.navbar-collapse-mobile.show {
+    left: 0; /* Mostra o menu ao adicionar a classe 'show' */
+}
+
+.navbar-collapse-mobile .navbar-nav {
+    flex-direction: column !important; /* Organiza os itens verticalmente */
+    align-items: flex-start !important; /* Alinha os itens à esquerda */
+    padding: 0 20px;
+}
+
+.navbar-collapse-mobile .nav-item {
+    width: 100%;
+    border-bottom: 1px solid #444; /* Adiciona uma linha divisória entre os itens */
+}
+
+.navbar-collapse-mobile .nav-item:last-child {
+    border-bottom: none;
+}
+
+.navbar-collapse-mobile .nav-link {
+    color: #fcfcfc !important;
+    padding: 15px 0 !important;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999; /* Fica abaixo do menu, mas acima do conteúdo */
+    display: none; /* Oculto por padrão */
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.overlay.show {
+    display: block;
+    opacity: 1;
+}
+
+@media (min-width: 992px) { /* Para telas maiores, volta ao comportamento padrão */
+    .navbar-toggler-custom {
+        display: none;
+    }
+    .navbar-collapse-mobile {
+        position: static;
+        width: auto;
+        height: auto;
+        background-color: transparent;
+        left: auto;
+        padding-top: 0;
+    }
+    .navbar-collapse-mobile .navbar-nav {
+        flex-direction: row !important;
+        align-items: center !important;
+        padding: 0;
+    }
+    .navbar-collapse-mobile .nav-item {
+        border-bottom: none;
+    }
+    .navbar-collapse-mobile .nav-link {
+        color: #b8b8b9 !important;
+        padding: 8px 15px !important;
+    }
+    .navbar-nav .nav-item.active .nav-link {
+        color: #fcfcfc !important;
+    }
+    .overlay {
+        display: none !important;
+    }
+}
